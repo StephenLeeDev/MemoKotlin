@@ -18,7 +18,6 @@ abstract class MemoDatabase : RoomDatabase() {
                     INSTANCE = Room.databaseBuilder(context.applicationContext, MemoDatabase::class.java, "memo.db")
                         .fallbackToDestructiveMigration()
                         .build()
-
                 }
             }
             return INSTANCE
